@@ -4,12 +4,12 @@
 *
 * Return: int(0)
 */
-Int main(void)
+int main(void)
 {
-	char *text = "_putchar";
+	char text[] = "_putchar";
 	int i;
 
-	for(i = 0; i<text.length;i++)
+	for(i = 0; i<strlen(text);i++)
 		putchar(text[i]);
 	return (0);
 }
