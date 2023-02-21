@@ -8,8 +8,9 @@ int main(void)
 {
 	char text[] = "_putchar";
 	int i;
+	int len = strlen(text);
 
-	for(i = 0; i<strlen(text);i++)
+	for(i = 0;i < len;i++)
 		putchar(text[i]);
 	return (0);
 }
