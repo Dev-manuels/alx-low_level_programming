@@ -7,4 +7,4 @@
 void print_alphabet(void);
 
 
-#endif /*_MAIN_H_*/
+#endif
