@@ -4,17 +4,7 @@
 #include <stdio.h>
 
 
-
-void print_alphabet(void)
-{
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		putchar(letter);
-	}
-	putchar('\n');
-}
+void print_alphabet(void);
 
 
 #endif /*_MAIN_H_*/
