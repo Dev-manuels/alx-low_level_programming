@@ -2,10 +2,6 @@
 /**
 * jack_bauer - function to print every minute of the day
 *
-* @i: car for loop counter 0 to 2
-* @j: car for loop counter 0 to 3
-* @k: var for loop counter 0 to 5
-* @l: var for loop counter 0 to 9
 * Return: int
 */
 void jack_bauer(void)
@@ -50,6 +46,5 @@ void jack_bauer(void)
 				}
 			}
 		}
-		
 	}
 }
