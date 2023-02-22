@@ -1,10 +1,11 @@
 #include "main.h"
 /**
 * print_last_digit - prints last digit of a number
-* @no:number input to cuntion
+* @num:number input to cuntion
 * Return: int
 */
 int print_last_digit(int num)
 {
+	putchar('0' + (num % 10));
 	return (num % 10);
 }
