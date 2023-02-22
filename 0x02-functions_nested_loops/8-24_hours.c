@@ -12,7 +12,6 @@ void jack_bauer(void)
 	{
 		if (i == 2)
 		{
-			jack_bauer_cont();
 			break;
 		}
 		else
@@ -34,6 +33,7 @@ void jack_bauer(void)
 			}
 		}
 	}
+	jack_bauer_cont();
 }
 
 void jack_bauer_cont(void)
