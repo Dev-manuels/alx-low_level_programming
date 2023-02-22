@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _isalpha - function to check it char is an alphabet
+* print_sign - function to check it char is an alphabet
 *
 * @n: var for comparing
 * Return: int(1)
@@ -16,7 +16,7 @@ int print_sign(int n)
 	{
 		_putchar('0');
 		return (0);
-	} else
+	} else if (n < 0)
 	{
 		_putchar('-');
 		return (-1);
