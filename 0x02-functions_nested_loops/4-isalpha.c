@@ -3,7 +3,7 @@
 * _isalpha - function to check it char is an alphabet
 *
 * @c: var for comparing
- Return: int (1) for yes and 0 for no
+ Return: int(1) for yes and 0 for no;
  */
 int _isalpha(int c)
 {
