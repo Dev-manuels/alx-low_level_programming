@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _isalpha - function to check it char s alphabet
+* _isalpha - function to check it char is an alphabet
 *
 * @c: var for comparing
- Return: int
+ Return: int (1) for yes and 0 for no
  */
 int _isalpha(int c)
 {
