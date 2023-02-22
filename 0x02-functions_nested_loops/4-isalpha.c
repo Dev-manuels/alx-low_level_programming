@@ -7,5 +7,8 @@
  */
  int _isalpha(int c)
  {
-    return (isalpha(c) ? 1 : 0);
+	if (c > 64 && c < 123)
+		return (1);
+	else
+		return (0);
  }
