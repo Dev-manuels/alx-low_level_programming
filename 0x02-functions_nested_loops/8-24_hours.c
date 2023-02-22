@@ -40,6 +40,7 @@ void jack_bauer_cont(void)
 {
 	int i, j, k, l;
 	i = 2;
+	
 	for (j = 0; j < 4; j++)
 	{
 		for (k = 0; k < 6; k++)
