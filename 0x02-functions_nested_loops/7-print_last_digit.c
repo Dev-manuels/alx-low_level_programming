@@ -4,7 +4,7 @@
 * @no:number input to cuntion
 * Return: int
 */
-int print_last_digit(int no)
+int print_last_digit(int num)
 {
-	return (no % 10);
+	return (num % 10);
 }
