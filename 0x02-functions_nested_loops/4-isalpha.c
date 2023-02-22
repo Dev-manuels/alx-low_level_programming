@@ -5,10 +5,10 @@
 * @c: var for comparing
  Return: int
  */
- int _isalpha(int c)
- {
+int _isalpha(int c)
+{
 	if (c > 64 && c < 123)
 		return (1);
 	else
 		return (0);
- }
+}
