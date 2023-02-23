@@ -10,28 +10,29 @@ void print_times_table(int n)
 	char str[20];
 
 	if (n > 15 || n < 0)
-		break;
-	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j <= n; j++)
+		for (i = 0; i <= n; i++)
 		{
-			out = i * j;
-			sprintf(str, "%d", i * (j+1));
-			printf("%d", out);
-			if (j == n)
-				continue;
-			putchar(',');
-			if (strlen(str) == 2)
+			for (j = 0; j <= n; j++)
 			{
-				printf("  ");
-				continue;
-			} else if (strlen(str) == 3)
-			{
-				printf(" ");
-				continue;
-			} 
-			printf("   ");
+				out = i * j;
+				sprintf(str, "%d", i * (j+1));
+				printf("%d", out);
+				if (j == n)
+					continue;
+				putchar(',');
+				if (strlen(str) == 2)
+				{
+					printf("  ");
+					continue;
+				} else if (strlen(str) == 3)
+				{
+					printf(" ");
+					continue;
+				} 
+				printf("   ");
+			}
+			putchar('\n');
 		}
-		putchar('\n');
 	}
 }
