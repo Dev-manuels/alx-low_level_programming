@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * _isupper - function to test if a letter is uppercase
 *
@@ -12,5 +13,5 @@ int _isupper(int c)
 		rtval = 1;
 	else
 		rtval = 0;
-	return(rtval)
+	return(rtval);
 }
