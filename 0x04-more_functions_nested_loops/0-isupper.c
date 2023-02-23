@@ -6,8 +6,11 @@
 */
 int _isupper(int c)
 {
-	if (isupper(c) >0)
-		return(1);
+	int rtval;
+
+	if (isupper(c) > 0)
+		rtval = 1;
 	else
-		return(0);
+		rtval = 0;
+	return(rtval)
 }
