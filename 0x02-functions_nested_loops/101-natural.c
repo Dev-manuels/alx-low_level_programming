@@ -13,7 +13,7 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
-			printf("%d", i);
+			printf("%d\n", i);
 		}
 	}
 	printf("the sum of multiples of 3 & 5 under 1024 is %d\n", sum);
