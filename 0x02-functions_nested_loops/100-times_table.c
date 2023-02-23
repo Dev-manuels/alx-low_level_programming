@@ -16,8 +16,8 @@ void print_times_table(int n)
 			printf("%d", out);
 			if (j == n)
 				continue;
+			putchar(',');
 			printf("   ");
-			putchar(' ');
 		}
 		putchar('\n');
 	}
