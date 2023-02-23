@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
-* _isupper - function to test if a letter is uppercase
+* _isupper - function to test if char c is uppercase
 *
-* Return: intergr
+* Return: int 0 for NO, 1 for yes
 */
 int _isupper(int c)
 {
-	return isupper(c) ? 1 : 0;
+	return (c > 64 && c < 91) ? 1 : 0;
 }
