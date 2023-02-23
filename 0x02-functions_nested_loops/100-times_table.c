@@ -17,7 +17,7 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				out = i * j;
-				sprintf(str, "%d", i * (j+1));
+				sprintf(str, "%d", i * (j + 1));
 				printf("%d", out);
 				if (j == n)
 					continue;
@@ -30,7 +30,7 @@ void print_times_table(int n)
 				{
 					printf(" ");
 					continue;
-				} 
+				}
 				printf("   ");
 			}
 			putchar('\n');
