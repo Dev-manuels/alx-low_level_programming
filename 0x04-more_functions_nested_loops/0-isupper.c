@@ -7,11 +7,5 @@
 */
 int _isupper(int c)
 {
-	int rtval;
-
-	if (isupper(c) > 0)
-		rtval = 1;
-	else
-		rtval = 0;
-	return(rtval);
+	return isupper(c) ? 1 : 0;
 }
