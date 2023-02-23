@@ -19,11 +19,15 @@ void print_times_table(int n)
 			if (j == n)
 				continue;
 			putchar(',');
-			if (strlen(str) > 1)
+			if (strlen(str) == 2)
 			{
 				printf("  ");
 				continue;
-			}
+			} else if (strlen(str) == 3)
+			{
+				printf(" ");
+				continue;
+			} 
 			printf("   ");
 		}
 		putchar('\n');
