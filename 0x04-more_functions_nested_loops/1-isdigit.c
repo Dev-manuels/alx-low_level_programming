@@ -8,5 +8,5 @@
 */
 int _isdigit(int c)
 {
-	return ((c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f') ? 0 : 1);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') ? 0 : 1);
 }
