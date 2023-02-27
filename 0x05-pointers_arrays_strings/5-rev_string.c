@@ -13,5 +13,5 @@ void rev_string(char *s)
 	{
 		printf("%c", s[i]);
 	}
-	printf("\0");
+	putchar('\0');
 }
