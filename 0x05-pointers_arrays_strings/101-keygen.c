@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * main - Generates random valid passwords for the
 *        program 101-crackme.
