@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pow_recursion - Funtion to find the exponent 
+ * _pow_recursion - Funtion to find the exponent
  * of a given number to a given power.
  * @x: number to be raised to power
  * @y: number of power to raise x
