@@ -1,2 +1,1 @@
-# This directory is for C tasks day three
-# INTRODUCTION TO Functions & nested loops
+# Pracicing C Functions & nested loops @Alx_africa

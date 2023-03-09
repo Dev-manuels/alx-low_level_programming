@@ -1,2 +1,1 @@
-# This directory is for C tasks day two
-# INTRODUCTION TO Variables, LOOPS & IF statements
+# Practicing C Variables, LOOPS & IF statements @Alx_africa

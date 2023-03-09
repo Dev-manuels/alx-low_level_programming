@@ -2,7 +2,6 @@
 /**
  * _puts_recursion - function to print a string
  * @s: string to be printed
- * Return: void
 */
 void _puts_recursion(char *s)
 {

@@ -1,1 +1,1 @@
-#This is my first ALX C programming practice
+# This is my first C programming practice @Alx_africa

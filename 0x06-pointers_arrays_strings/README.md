@@ -1,1 +1,1 @@
-# More on C pointers and string
+# Practicing C more pointers and string manupulation @Alx_africa
