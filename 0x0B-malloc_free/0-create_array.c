@@ -21,7 +21,10 @@ char *create_array(unsigned int size, char c)
 				s[i] = c;
 			}
 			return (s);
-		} 
+		} else
+		{
+			return (NULL);
+		}
 	} else
 	{
 		return (NULL);
