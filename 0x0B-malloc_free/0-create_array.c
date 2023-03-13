@@ -7,20 +7,25 @@
 */
 char *create_array(unsigned int size, char c)
 {
-	if (size != 0){
-		char* s = (char*) malloc(size);
+	if (size != 0)
+	{
+		char *s = (char*) malloc(size);
 
-		if (s == NULL){
+		if (s == NULL)
+		{
 			return NULL;
-		}else {
+		}else 
+		{
 			unsigned int i;
 
-			for (i = 0; i < size; i++){
+			for (i = 0; i < size; i++)
+			{
 				s[i] = c;
 			}
 			return s;
 		}
-	} else{
+	} else
+	{
 		return NULL;
 	}
 }
