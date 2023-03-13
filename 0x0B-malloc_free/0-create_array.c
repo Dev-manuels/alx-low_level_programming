@@ -19,13 +19,13 @@ char *create_array(unsigned int size, char c)
 			{
 				s[i] = c;
 			}
-			return s;
+			return (s);
 		} else
 		{
-			return NULL;
+			return (NULL);
 		}
 	} else
 	{
-		return NULL;
+		return (NULL);
 	}
 }
