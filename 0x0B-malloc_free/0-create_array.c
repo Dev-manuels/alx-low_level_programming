@@ -2,7 +2,8 @@
 /**
  * create_array - function that creates an array of chars,
  * and initializes it with a specific char.
- * @c: char to be contained in the array
+ * @c: char to be contained in the array.
+ * @size: size of array to be initialized.
 * Return: A pointer to the array, or NULL if it fails or size = 0.
 */
 char *create_array(unsigned int size, char c)
@@ -20,10 +21,7 @@ char *create_array(unsigned int size, char c)
 				s[i] = c;
 			}
 			return (s);
-		} else
-		{
-			return (NULL);
-		}
+		} 
 	} else
 	{
 		return (NULL);
