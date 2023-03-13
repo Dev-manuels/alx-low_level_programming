@@ -8,10 +8,10 @@
 */
 char *create_array(unsigned int size, char c)
 {
+	char *s = malloc(size);
+
 	if (size != 0)
 	{
-		char *s = malloc(size);
-
 		if (s != NULL)
 		{
 			unsigned int i;
@@ -24,9 +24,10 @@ char *create_array(unsigned int size, char c)
 		{
 			s = NULL;
 		}
-		return (s);
 	} else
 	{
-		return (NULL);
+		s = NULL;
 	}
+
+	return (s);
 }
