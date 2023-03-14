@@ -14,9 +14,11 @@ char *create_array(unsigned int size, char c)
 
 		if (s != NULL)
 		{
-			int i;
+			int i, j;
 
-			for (i = 0; i < size; i++)
+			j = (int) size;
+
+			for (i = 0; i < j; i++)
 			{
 				s[i] = c;
 			}
