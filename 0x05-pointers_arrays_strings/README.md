@@ -1,0 +1,1 @@
+# Practicing C pointers and array string @Alx_africa
