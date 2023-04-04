@@ -20,6 +20,7 @@ void free_listint(listint_t *head)
 				continue;
 			}
 			free(head);
+			break;
 		}
 	}
 }
