@@ -1,6 +1,8 @@
 #include "lists.h"
 /**
  * reverse_listint - function that reverses a list.
+ * @head: pointer to a list
+ * Return: pointer to new head.
 */
 listint_t *reverse_listint(listint_t **head)
 {
