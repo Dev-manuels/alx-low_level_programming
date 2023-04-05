@@ -1,12 +1,10 @@
 #include "lists.h"
 /**
  * reverse_listint - function that reverses a list.
- * @head: pointer to a list
- * Return: pointer to new head.
 */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *prev = NULL, *next, *current;
+	listint_t *prev = NULL, *next;
 
 	if (head == NULL)
 	{
@@ -14,13 +12,12 @@ listint_t *reverse_listint(listint_t **head)
 	}
 	if (*head != NULL)
 	{
-		current = *head;
-		while (current)
+		while (*head)
 		{
-			next = current->next;
-			current->next = prev;
-			prev = current;
-			current = next;
+			next = (*head)->next;
+			(*head)->next = prev;
+			prev = *head;
+			*head = next;
 		}
 	}
 	*head = prev;
