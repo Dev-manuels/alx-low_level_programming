@@ -12,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (key != NULL && value != NULL)
 	{
-		index = key_index(key, ht->size);
+		index = key_index((const unsigned char *) key, ht->size);
 		status = add_node(&((ht->array)[index]), key, value);
 	}
 	return (status);
@@ -35,8 +35,8 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 	{
 		if (new != NULL)
 		{
-			new->key = key;
-			new->value = value;
+			new->key = (char *) key;
+			new->value = (char *) value;
 			new->next = *head;
 			*head = new;
 			status = 1;
