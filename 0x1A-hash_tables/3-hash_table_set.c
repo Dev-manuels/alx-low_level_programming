@@ -10,7 +10,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int index = 0, status = 0;
 
-	if (key != NULL && value != NULL)
+	if (ht != NULL && key != NULL && value != NULL)
 	{
 		index = key_index((const unsigned char *) key, ht->size);
 		status = add_node(&((ht->array)[index]), key, value);
