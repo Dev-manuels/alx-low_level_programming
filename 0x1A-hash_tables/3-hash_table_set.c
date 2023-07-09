@@ -28,18 +28,27 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 */
 int add_node(hash_node_t **head, const char *key, const char *value)
 {
-	hash_node_t *new = malloc(sizeof(hash_node_t));
+	hash_node_t *new;
 	int status = 0;
 
 	if (head != NULL)
 	{
-		if (new != NULL && valid_node(head, key, value) == 0)
+		status = valid_node(head, key, value);
+		if (status == 0)
 		{
-			new->key = (char *) key;
-			new->value = (char *) value;
-			new->next = *head;
-			*head = new;
-			status = 1;
+			new = malloc(sizeof(hash_node_t));
+			if (new != NULL)
+			{
+				new->key = (char *) key;
+				new->value = (char *) value;
+				new->next = *head;
+				*head = new;
+				status = 1;
+			} else
+			{
+				free(new);
+				status = 0;
+			}
 		}
 	}
 	return (status);
@@ -62,9 +71,10 @@ int valid_node(hash_node_t **head, const char *key, const char *value)
 		current = *head;
 		while (current)
 		{
-			if (strcmp(current->key, key) == 0 &&
-				strcmp(current->key, value) == 0)
+			if (strcmp(current->key, key) == 0)
 			{
+				if (strcmp(current->key, value) != 0)
+					current->value = (char *) value;
 				status = 1;
 				break;
 			}
