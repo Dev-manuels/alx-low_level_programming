@@ -39,7 +39,7 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 			new = malloc(sizeof(hash_node_t));
 			if (new != NULL)
 			{
-				new->key = (char *) key;
+				new->key = strdup(key);
 				new->value = strdup(value);
 				new->next = *head;
 				*head = new;
