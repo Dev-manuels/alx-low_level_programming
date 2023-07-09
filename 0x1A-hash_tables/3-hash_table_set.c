@@ -50,8 +50,6 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 				status = 0;
 			}
 		}
-		if (status == 2)
-			status = 1;
 	}
 	return (status);
 }
@@ -76,12 +74,9 @@ int valid_node(hash_node_t **head, const char *key, const char *value)
 		{
 			if (strcmp(current->key, key) == 0)
 			{
-				status = 2;
 				if (strcmp(current->key, value) != 0)
-				{
 					current->value = (char *) value;
-					status = 1;
-				}
+				status = 1;
 				break;
 			}
 			current = current->next;
