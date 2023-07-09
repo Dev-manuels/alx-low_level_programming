@@ -50,12 +50,15 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 				status = 0;
 			}
 		}
+		if (status == 2)
+			status = 0;
 	}
 	return (status);
 }
 
 /**
  * valid_node - function to checks if the same key/value pair exist
+ * and updates it
  * @head: pointer to key hash index of the hash table
  * @key: key to the value to be updated
  * @value: new value
@@ -73,9 +76,12 @@ int valid_node(hash_node_t **head, const char *key, const char *value)
 		{
 			if (strcmp(current->key, key) == 0)
 			{
+				status = 2;
 				if (strcmp(current->key, value) != 0)
+				{
 					current->value = (char *) value;
-				status = 1;
+					status = 1;
+				}
 				break;
 			}
 			current = current->next;
