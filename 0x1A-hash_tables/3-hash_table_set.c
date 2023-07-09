@@ -74,7 +74,7 @@ int valid_node(hash_node_t **head, const char *key, const char *value)
 		{
 			if (strcmp(current->key, key) == 0)
 			{
-				if (strcmp(current->key, value) != 0)
+				if (strcmp(current->value, value) != 0)
 					current->value = (char *) value;
 				status = 1;
 				break;
