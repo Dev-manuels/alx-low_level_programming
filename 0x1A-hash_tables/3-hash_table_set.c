@@ -40,7 +40,7 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 			if (new != NULL)
 			{
 				new->key = (char *) key;
-				new->value = (char *) value;
+				new->value = strdup(value);
 				new->next = *head;
 				*head = new;
 				status = 1;
@@ -79,7 +79,8 @@ int valid_node(hash_node_t **head, const char *key, const char *value)
 				status = 2;
 				if (strcmp(current->value, value) != 0)
 				{
-					current->value = (char *) value;
+					free(current->value);
+					current->value = strdup(value);
 					status = 1;
 				}
 				break;
