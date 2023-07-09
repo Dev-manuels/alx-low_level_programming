@@ -51,7 +51,7 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 			}
 		}
 		if (status == 2)
-			status = 0;
+			status = 1;
 	}
 	return (status);
 }
