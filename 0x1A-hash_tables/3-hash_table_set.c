@@ -33,7 +33,7 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 
 	if (head != NULL)
 	{
-		if (new != NULL && update_node(head, key, value) == 0)
+		if (new != NULL && valid_node(head, key, value) == 0)
 		{
 			new->key = (char *) key;
 			new->value = (char *) value;
@@ -46,14 +46,13 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 }
 
 /**
- * update_node - function that updates the value
- * of a node in a hash table
+ * valid_node - function to checks if the same key/value pair exist
  * @head: pointer to key hash index of the hash table
  * @key: key to the value to be updated
  * @value: new value
- * Return: 1 on success else 0
+ * Return: 1 if yes else 0
 */
-int update_node(hash_node_t **head, const char *key, const char *value)
+int valid_node(hash_node_t **head, const char *key, const char *value)
 {
 	int status = 0;
 	hash_node_t *current;
@@ -63,9 +62,9 @@ int update_node(hash_node_t **head, const char *key, const char *value)
 		current = *head;
 		while (current)
 		{
-			if (strcmp(current->key, key) == 0)
+			if (strcmp(current->key, key) == 0 &&
+				strcmp(current->key, value) == 0)
 			{
-				current->value = (char *) value;
 				status = 1;
 				break;
 			}
