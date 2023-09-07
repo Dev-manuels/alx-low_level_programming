@@ -32,6 +32,6 @@ void hash_table_print(const hash_table_t *ht)
 		i++;
 	}
 	if (count > 0)
-		print("\n");
+		printf("\n");
 
 }
