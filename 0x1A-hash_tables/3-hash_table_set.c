@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * add_node - function that adds a new node at start
+ * add_node - helper function that adds a new node at start
  * of a hash node linked list
  * @head: pointer to key hash index of the hash table
  * @key: key to value
@@ -57,12 +57,14 @@ int add_node(hash_node_t **head, const char *key, const char *value)
 }
 
 /**
- * valid_node - function to checks if the same key/value pair exist
+ * valid_node - helper function that checks if the same key/value pair exist
  * and updates it
  * @head: pointer to key hash index of the hash table
  * @key: key to the value to be updated
  * @value: new value
- * Return: 1 if yes else 0
+ * Return: returns 1 if the same key/value pair exists and the value
+ * was updated, 2 if the same key exists but the value remains the
+ * same, and 0 if the key does not exist in the linked list
 */
 int valid_node(hash_node_t **head, const char *key, const char *value)
 {
