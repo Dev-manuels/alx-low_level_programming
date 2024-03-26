@@ -12,7 +12,7 @@ fclean: clean oclean
 clean:
 	$(RM) *~ #* $(NAME)
 
-ocean:
+oclean:
 	$(RM) $(OBJ)
 
 re:
